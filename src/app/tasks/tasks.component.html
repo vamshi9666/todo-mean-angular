@@ -1,0 +1,13 @@
+<div class="whole-task">
+	<ul>
+		<li class="task" *ngFor="let task of tasks">
+			<button class="task-con">
+				<span class="ele">{{task.startDate}}</span>
+				<h5 class="ele" ><strong>{{task.name}}</strong></h5>
+				<span class="ele">{{task.endDate}}</span>
+			</button>
+		</li>
+	</ul>
+	<button (click)="onNew()" class="btn-new">New </button>
+
+</div>
